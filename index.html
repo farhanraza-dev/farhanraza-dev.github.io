@@ -4,58 +4,149 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Farhan Raza — Full Stack Developer</title>
-  <meta name="description" content="Full Stack Developer (Laravel + Vue.js) in Dubai specializing in custom web apps, CRMs, and Bitrix24 integrations.">
+  <meta name="description" content="Full Stack Developer (Laravel + Vue.js). Remote-ready. Custom web apps, CRMs & APIs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="container">
-  <nav class="nav">
+<header class="site-header">
+  <div class="container nav">
     <div class="brand">Farhan <span>Raza</span></div>
-    <div class="nav-actions">
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
       <button id="themeToggle" aria-label="Toggle theme">🌓</button>
-      <a class="btn" href="Farhan_Raza_Dubai_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-    </div>
-  </nav>
-  <div class="hero">
-    <h1>Full Stack Developer <span>(Laravel · Vue.js)</span></h1>
-    <p class="tagline">I build custom web applications, CRMs, and developer-friendly APIs. Based in Dubai. 6+ years experience.</p>
-    <div class="badges">
-      <a href="mailto:farhanr1961@gmail.com" class="badge">📧 Email</a>
-      <a href="https://github.com/farhanraza-dev" class="badge" target="_blank">🐙 GitHub</a>
-      <a href="https://linkedin.com/in/farhan-raza-49873775" class="badge" target="_blank">💼 LinkedIn</a>
-    </div>
+    </nav>
   </div>
 </header>
 
-<main class="container">
-  <section id="skills">
-    <h2>Core Skills</h2>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>Full Stack Developer <span>(Laravel · Vue.js)</span></h1>
+      <p>6+ years building secure, scalable <b>custom web applications</b>, CRMs and APIs. Remote-friendly, based in Dubai — available worldwide.</p>
+      <div class="cta">
+        <a class="btn primary" href="Farhan_Raza_Dubai_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+      <ul class="quick">
+        <li>✅ Bitrix24 Integrations</li>
+        <li>✅ Multi-tenant SaaS</li>
+        <li>✅ REST APIs & MySQL</li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <!-- Replace profile.jpg with your real photo (keep the same name) -->
+      <img src="profile.jpg" alt="Farhan Raza portrait">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a results-driven developer focused on solving real business problems with clean architecture and delightful UX.
+      I’ve delivered CRMs, reservation systems, and custom tools (including a <b>mobile case designing tool</b> using Snap.svg) end‑to‑end —
+      from database design to cloud deployment on AWS LightSail.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
     <ul class="chips">
-      <li>Laravel</li><li>Vue.js</li><li>Inertia.js</li><li>REST APIs</li><li>MySQL</li>
-      <li>AWS LightSail</li><li>Linux</li><li>TailwindCSS</li><li>Bootstrap</li><li>Bitrix24</li>
+      <li>Laravel</li><li>PHP</li><li>Vue.js</li><li>Inertia.js</li><li>REST APIs</li><li>MySQL</li>
+      <li>AWS LightSail</li><li>Linux</li><li>TailwindCSS</li><li>Bootstrap</li><li>Bitrix24</li><li>Git</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="projects">
+<section id="projects" class="projects">
+  <div class="container">
     <h2>Featured Projects</h2>
-    <div id="projectsGrid" class="grid"></div>
-  </section>
+    <div class="grid">
+      <article class="card">
+        <img src="shots/ashyana.jpg" alt="Ashyana CRM screenshot">
+        <div class="card-body">
+          <h3>Ashyana CRM</h3>
+          <p>End‑to‑end CRM with hierarchy, leads, tasks & affiliates. Reduced manual effort by <b>40%</b>.</p>
+          <div class="links">
+            <a href="https://github.com/farhanraza-dev/ashyana-crm" target="_blank">Repository ↗</a>
+            <a href="#" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="shots/landlink.jpg" alt="Landlink CRM screenshot">
+        <div class="card-body">
+          <h3>Landlink Marketing CRM</h3>
+          <p>Real estate properties + lead transfer & affiliate modules with reporting.</p>
+          <div class="links">
+            <a href="https://github.com/farhanraza-dev/landlink-crm" target="_blank">Repository ↗</a>
+            <a href="#" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="shots/case-designer.jpg" alt="Mobile Case Designer screenshot">
+        <div class="card-body">
+          <h3>Mobile Case Designer</h3>
+          <p>Snap.svg powered customizer with real-time previews and admin CMS.</p>
+          <div class="links">
+            <a href="https://github.com/farhanraza-dev/mobile-case-designer" target="_blank">Repository ↗</a>
+            <a href="#" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="shots/shuttle.jpg" alt="Shuttle Reservation screenshot">
+        <div class="card-body">
+          <h3>Airport Shuttle Reservation</h3>
+          <p>Real-time bookings, payments, schedules & notifications for US shuttles.</p>
+          <div class="links">
+            <a href="https://github.com/farhanraza-dev/shuttle-reservation" target="_blank">Repository ↗</a>
+            <a href="#" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="shots/bitrix.jpg" alt="Bitrix24 Integrations screenshot">
+        <div class="card-body">
+          <h3>Bitrix24 Integrations</h3>
+          <p>Webhooks & dashboards to sync and visualize Bitrix24 data with Laravel + Inertia.</p>
+          <div class="links">
+            <a href="https://github.com/farhanraza-dev/bitrix24-integrations" target="_blank">Repository ↗</a>
+            <a href="#" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
+<section id="contact" class="contact">
+  <div class="container">
     <h2>Contact</h2>
-    <p>Open to roles worldwide (remote) and UAE. For collaborations or opportunities, reach out.</p>
-    <ul class="contact-list">
-      <li>📞 +971 50 285 3364</li>
-      <li>📧 <a href="mailto:farhanr1961@gmail.com">farhanr1961@gmail.com</a></li>
-    </ul>
-  </section>
-</main>
+    <p>Open to remote roles and freelance projects. Let’s build something great.</p>
+    <div class="contact-actions">
+      <a class="btn primary" href="mailto:farhanr1961@gmail.com">Email</a>
+      <a class="btn ghost" target="_blank" href="https://wa.me/971502853364">WhatsApp</a>
+      <a class="btn ghost" target="_blank" href="https://linkedin.com/in/farhan-raza-49873775">LinkedIn</a>
+      <a class="btn ghost" target="_blank" href="https://github.com/farhanraza-dev">GitHub</a>
+    </div>
+  </div>
+</section>
 
-<footer class="container">
-  <p>© <span id="year"></span> Farhan Raza — Built with HTML/CSS/JS. Deployed on GitHub Pages.</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Farhan Raza — Built with HTML/CSS/JS. Hosted on GitHub Pages.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
